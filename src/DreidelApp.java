@@ -36,7 +36,6 @@ public class DreidelApp {
 		gameApp.setVisible(true); //making JFrame Visible
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		initialApp(); //creating application
 		if (splashApp.isActive() == false) {
 			gameApp();
