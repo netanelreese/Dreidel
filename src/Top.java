@@ -1,18 +1,15 @@
 import java.util.Random;
 
 public class Top {
-	private Symbol symbol; //storing the current symbol in the class
 	private static int MAXNUM = 3;
 	
-	public Top(Symbol symbol) {
-		this.symbol = symbol; //ensuring symbol isnt null when top object is created in game
-	}
 	public Symbol getRandomSymbol() {
-		Random randNum = new Random();
+		Random randNum = new Random(); // creating random object to create random numbers
 		
-		return randSymbol(randNum.nextInt(MAXNUM) + 1);
+		return randSymbol(randNum.nextInt(MAXNUM) + 1); // generating random number for symbol "+ 1" is to counteract the - 1 used by the
+		//nextInt Method
 	}
-	public Symbol randSymbol(int randNum) {
+	public Symbol randSymbol(int randNum) { // using numbers to simplify random selection of symbols
 		if (randNum == 1) {
 			return Symbol.Shin;
 		}
