@@ -7,7 +7,7 @@ public enum Symbol {
 	private Symbol(String symbol) {
 		this.symbol = symbol;
 	}
-	private String toString() {
+	public String toString() {
 		return symbol;
 	}
 }
